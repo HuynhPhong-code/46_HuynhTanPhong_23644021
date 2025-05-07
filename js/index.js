@@ -56,14 +56,14 @@ document.querySelectorAll(".btn-success").forEach((button) => {
         title
       )}&price=${encodeURIComponent(price)}&image=${encodeURIComponent(
         image
-      )}&description=${encodeURIComponent(description)}&quantity=1`;  // Chỉnh sửa đường dẫn
+      )}&description=${encodeURIComponent(description)}&quantity=1`;  
 
       window.location.href = url;
     });
   });
 });
 
-// Xử lý nút "Thêm vào giỏ hàng" (add-to-cart)
+// Xử lý nút Thêm vào giỏ hàng
 document.querySelectorAll(".add-to-cart").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (btnDatMon) {
     btnDatMon.addEventListener("click", () => {
       checkLogin(() => {
-        window.location.href = "html/thanh-toan.html";  // Chỉnh sửa đường dẫn
+        window.location.href = "html/thanh-toan.html";  
       });
     });
   }
